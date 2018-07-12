@@ -1,0 +1,68 @@
+:toc: left
+:toclevels: 5
+:sectnums:
+
+= システムアーキテクチャ
+
+== 目的
+* システム設計および開発の指針を提示します。
+* システムのアーキテクチャ全体概要を理解するためのポータル的な位置づけのガイドです。
+* このガイドを起点に各々の詳細ガイドを参照してください。
+
+== 前提
+* 対象者は、インフラ設計者・開発者です。
+* AmazonWebサービス(AWS)のアカウント取得済み。
+* IAMユーザ作成済み。
+
+== 構成
+* <<anchor-1,全体概要>>
+* <<anchor-2,共通設計指針>>
+* <<anchor-3,実装指針>>
+* <<anchor-4,実装>>
+
+== 詳細
+=== 全体概要[[anchor-1]]
+==== 全体像
+
+===== 開発環境
+
+===== ステージング環境
+===== プロダクション環境
+
+=== 共通設計指針[[anchor-2]]
+==== 構築
+* インフラレイヤーセットアップ
+* アプリケーションレイヤーセットアップ
+
+==== 配置
+* アプリケーションセットアップ
+* アプリケーションプロビジョニング
+* アプリケーションデプロイ
+
+==== 運用
+* メンテナンス
+* バックアップ
+* 監視
+
+=== 実装指針[[anchor-3]]
+
+=== 実装[[anchor-4]]
+==== 開発環境
+* link:./development/build.html[開発環境構築ガイド]
+* link:./development/ship.html[開発環境配置ガイド]
+* link:./development/run.html[開発環境運用ガイド]
+
+==== ステージング環境
+* link:./staging/build.html[ステージング環境構築ガイド]
+* link:./staging/ship.html[ステージング環境配置ガイド]
+* link:./staging/run.html[ステージング環境運用ガイド]
+
+==== プロダクション環境
+* link:./production/build.html[プロダクション環境構築ガイド]
+* link:./production/ship.html[プロダクション環境配置ガイド]
+* link:./production/run.html[プロダクション環境運用ガイド]
+
+
+== 参照
+* Asciidoctor[http://asciidoctor.org/]
+* PlantUML[http://www.plantuml.com]
